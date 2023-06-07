@@ -1,0 +1,67 @@
+[
+    {
+        "restaurantID": 1,
+        "restaurantName": "Settebello Pizzeria Napoletana",
+        "logoURL": "https://images.squarespace-cdn.com/content/v1/5e8628fd2335d7362289654b/1587571962517-X78EXLNNTFEW0VMK2T8Y/Settebello_H_Tag_Rev_RGB.png?format=1500w",
+        "foodPictureURL": "https://images.squarespace-cdn.com/content/v1/5e8628fd2335d7362289654b/1587255858178-AMEUMEDMI7QWQ7I4CAS6/settebellopizzamarherita.jpg?format=500w",
+        "foodType": "Pizza",
+        "priceRange": "$$",
+        "locationCounty": "Salt Lake County",
+        "menuLink": "https://www.toasttab.com/settebelloslc/v3",
+        "davesReview": "4 out of 5 stars! If you want a taste of Italy in SLC, I’d highly recommend Settebello’s! They have delicious thin Naples style pizzas, fresh salads, plus a gelato shop next doors. My go to’s are the Bianca, Brisket and Settebello Pizzas.",
+        "userNote": ""
+    },
+
+    {
+        "restaurantID": 2,
+        "restaurantName": "Nico’s Pizza”",
+        "logoURL": "https://img1.wsimg.com/isteam/ip/bd471132-69ee-476c-9b4d-81b5de42fc09/logo/32c149f6-0c7c-41e3-b575-d755463f0998.png/:/rs=w:454,h:80,cg:true,m/cr=w:454,h:80/qt=q:95",
+        "foodPictureURL": "https://img1.wsimg.com/isteam/ip/bd471132-69ee-476c-9b4d-81b5de42fc09/22f60003-a442-4f30-aa68-175e0d73d26a.jpg/:/cr=t:11.2%25,l:0%25,w:100%25,h:75%25/rs=w:365,h:365,cg:true",
+        "foodType": "Pizza",
+        "priceRange": "$",
+        "locationCounty": "Utah County",
+        "menuLink": "https://nicolitalia.com/menus",
+        "davesReview": "4 out of 5 stars. Nico’s Boston Style pizza makes for a delicious and hearty meal at a very affordable price. I never go without getting the Bunker Hill Pizza!",
+        "userNote": ""
+    },
+
+    {
+        "restaurantID": 3,
+        "restaurantName": "Pizzeria 712",
+        "logoURL": "https://popmenucloud.com/cdn-cgi/image/width%3D1920%2Cheight%3D1920%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/doitkbwn/feeecfcb-a938-4e88-8b53-25a5c1e5cd7a.png",
+        "foodPictureURL": "https://www.femalefoodie.com/wp-content/uploads/2016/01/IMG_8520-1024x682.jpg",
+        "foodType": "Pizza",
+        "priceRange": "$$",
+        "locationCounty": "Utah County",
+        "menuLink": "pizzeria712.com/menu",
+        "davesReview": "5 out of 5 stars. Pizzeria 712 is one of my favorite stops in all of Utah County. Their local/fresh menu goes beyond delicious pizzas offering incredible appetizers, salads and desserts. With a seasonal Menu, make sure to order one or two appetizers (they WON'T disappoint). My go to’s are the Braised Short Rib, Poached Pear & Burrata, Serrano and Sausage Pizza, and the Bianco. When they ask if you want dessert… Say YES! Their Almond Cake is to die for.",
+        "userNote": ""
+    },
+
+    {
+        "restaurantID": 4,
+        "restaurantName": "Mastra",
+        "logoURL": "https://static.wixstatic.com/media/1d07c8_5d22477bc362417fbad602611deea453~mv2.png/v1/fill/w_122,h_90,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/imageedit_25_3316483034.png",
+        "foodPictureURL": "https://static.wixstatic.com/media/1d07c8_4a7d1c4a88a84049a0973a061e2b1855~mv2.png/v1/fit/w_2500,h_1330,al_c/1d07c8_4a7d1c4a88a84049a0973a061e2b1855~mv2.png",
+        "foodType": "Italian",
+        "priceRange": "$$",
+        "locationCounty": "Utah County",
+        "menuLink": "https://www.mastraorders.com/menus",
+        "davesReview": "4 out of 5 stars - Mastra’s pasta is the best you can find in Utah County. Made fresh on the daily, each pasta dish is delicious and light. I love the Pesto Lasagna and Carbonara. Don’t forget to try their Focaccia. It is light, savory, and addicting!",
+        "userNote": ""
+    },
+
+    {
+        "restaurantID": 5,
+        "restaurantName": "Oteo",
+        "logoURL": "https://images.squarespace-cdn.com/content/v1/5f1363a74b5f222b2a43c46c/1607203283051-H4I95L39XHEVCT8RAENG/Ventricle-Media-The-Utah-Foodie-Oteo-Restaurant.jpg",
+        "foodPictureURL": "https://images.squarespace-cdn.com/content/v1/535e98dce4b09e1f27e7402d/1398712711372-X5XPKLCU6027ST7CSZ9S/Steak01web.jpg?format=1000w",
+        "foodType": "Mexican",
+        "priceRange": "$$",
+        "locationCounty": "Utah County",
+        "menuLink": "http://oteorestaurant.com/",
+        "davesReview": "5 out of 5 stars. Oteo is some of the Best Mexican food I’ve ever had in Utah. The menu is locally sourced and extremely fresh. With such a small menu, you really can’t go wrong. I love their Fruta Salad as a nice palate cleanser and the steak empanadas for my entree! Be sure to try their cronut dessert… It is Bomb!",
+        "userNote": ""
+    }
+
+]
