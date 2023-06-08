@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="aboutDavePage" href="./aboutDave.html">
+    <link rel="userRecommendationPage" href="./userRecommendation.html">
+    <title>Dave's Fine Dinner Dines</title>
+</head>
+<body>
+    <header>
+        <h1>Dave's Fine Dinner Dines</h1>
+    </header>
+
+    <main>
+        <section id="introSection">
+            <div id="introText">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur itaque tenetur, reprehenderit id, consectetur mollitia repellat vel optio doloribus soluta fuga amet error eos? Quasi soluta nostrum expedita in enim?</p>
+            </div>
+            <div>
+                 <a href="./aboutDave.html" class="navBar">About Dave</a>
+            </div>
+            <div>
+                <button id="randomRecommendation" class="introBtns">Get a Random Recommendation</button>
+            </div>
+            <div>
+                <a href="./userRecommendation.html" class="navBar">Give Dave a Recommendation</a>
+            </div>
+        </section>
+            
+
+        <section id="recommendationSection">
+            <div id="getReccomendation">
+                <form id="drinkForm">
+                    <div>
+                        <select name="foodType" id="foodTypeInput" class="recomendationForm">
+                            <optgroup label="Food Type/Genre">
+                                <option value="All Food Types">Select All Food Types</option>
+                                <option value="Italian">Italian</option>
+                                <option value="Mexican">Mexican</option>
+                                <option value="Pizza">Pizza</option>
+                        </optgroup>
+                        </select>
+                    </div>
+                    <div>
+                        <select name="priceRange" id="priceRangeInput" class="recomendationForm" placeholder="Price Range">
+                            <optgroup label="Price Range (per person)">
+                                <option value="All Price Ranges">Select All Price Ranges</option>
+                                <option value="$">$ -> ($15 or less)</option>
+                                <option value="$$">$$ -> ($15 - $40)</option>
+                                <option value="$$$">$$$ -> ($40 or more)</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div>
+                        <select name="locationCounty" id="locationCountyInput" class="recomendationForm" placeholder="Location">
+                            <optgroup label="Location">
+                                <option value="All Locations">Select All Locations</option>
+                                <option value="Salt Lake County">Salt Lake County</option>
+                                <option value="Utah County">Utah County</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <button id="getReccomendationBtn">Show Recommendation!</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        
+        
+        <section id="restuarantRecommendationDisplay"></section>
+    
+    </main>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./index.js"></script>
+
+</body>
+</html>

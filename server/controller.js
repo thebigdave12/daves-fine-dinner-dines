@@ -1,12 +1,12 @@
 let restaurants = require('./db.json')
 
-let globalReccomendationID = 2
+let globalReccomendationID = 1
 
 let userRecommendation = [
     {
-        recommendationId: 1,
-        recommendedRestaurantName: "Aubergine",
-        restaurantLocation: "Utah County"
+        // recommendationId: 0,
+        // recommendedRestaurantName: "Aubergine",
+        // restaurantLocation: "Utah County"
     }
 ]
 
