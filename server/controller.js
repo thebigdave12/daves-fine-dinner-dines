@@ -114,6 +114,8 @@ module.exports = {
     },
 
     getUserRecommendations: (req, res) => {
+        console.log(userRecommendation)
+        
         res.status(200).send(userRecommendation)
         
     },

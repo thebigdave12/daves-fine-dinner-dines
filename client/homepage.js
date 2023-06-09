@@ -6,7 +6,6 @@ const baseURL = 'http://localhost:2323/restaurants'
 const recommendationDisplay = document.querySelector("#restuarantRecommendationDisplay")
 const randomRestuarantBtn = document.querySelector("#randomRecommendation")
 const formGetRecommendations = document.querySelector("#recommendationForm")
-const formUserRecommendation = document.querySelector("#userReccomendationForm")
 
 //Step 2: 
 
@@ -95,7 +94,7 @@ const displayRestaurantRecommendations = (arr) => {
     if (arr.length === 0){
         const noMatchWithThoseParameters = document.createElement('section')
         noMatchWithThoseParameters.innerHTML = `
-        <h3>Sorry I have no recommendations that matches the parameters above... Please try for a new recommendation!</h3>
+        <h3 class="warningMessage">Sorry I have no recommendations that matches the parameters above... Please try for a new recommendation!</h3>
         `
 
         recommendationDisplay.appendChild(noMatchWithThoseParameters)
@@ -244,42 +243,5 @@ const deleteNote = (id) => {
 
 }
 
-const displayUserRecommendation = (e) => {
-
-}
-
-const addUserRecommendation = (e) => {
-    e.preventDefault()
-
-    drinkDisplay.innerHTML = ''
-
-    let userRecommendationRestaurantName = document.querySelector('#userRecommendationName')
-    let userRecommendationRestaurantLocation = document.querySelector('#userRecommendationLocation')
-
-    console.log(userRecommendationRestaurantName)
-    console.log(userRecommendationRestaurantLocation)
-
-
-    let bodyObj = {
-        name: userRecommendationRestaurantName.value,
-        location: userRecommendationRestaurantLocation.value,
-    }
-    
-    axios.post("http://localhost:2323/restaurants/user/reccomendation", bodyObj)
-        .then((res) => {
-            console.log(res.data)
-            displayAllDrinks(res.data)
-
-            userRecommendationRestaurantLocation.value = ''
-            userRecommendationRestaurantName.value = ''
-            
-
-        })
-        .catch((err) => {
-            console.log(err)
-        })
-}
-
 formGetRecommendations.addEventListener("submit", getRestaurantRecommendations);
 randomRestuarantBtn.addEventListener("click", displayRandomRestaurant);
-formUserRecommendation.addEventListener("submit", addUserRecommendation);
