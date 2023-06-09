@@ -14,7 +14,7 @@
 
     {
         "restaurantID": 2,
-        "restaurantName": "Nico’s Pizza”",
+        "restaurantName": "Nico’s Pizza",
         "logoURL": "https://img1.wsimg.com/isteam/ip/bd471132-69ee-476c-9b4d-81b5de42fc09/logo/32c149f6-0c7c-41e3-b575-d755463f0998.png/:/rs=w:454,h:80,cg:true,m/cr=w:454,h:80/qt=q:95",
         "foodPictureURL": "https://img1.wsimg.com/isteam/ip/bd471132-69ee-476c-9b4d-81b5de42fc09/22f60003-a442-4f30-aa68-175e0d73d26a.jpg/:/cr=t:11.2%25,l:0%25,w:100%25,h:75%25/rs=w:365,h:365,cg:true",
         "foodType": "Pizza",

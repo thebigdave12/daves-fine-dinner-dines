@@ -16,7 +16,7 @@ const {getRestuarants, getRandomRestuarant, getRestuarantRecommendation, addNote
 
 app.get('/restaurants', getRestuarants)
 app.get('/restaurants/random', getRandomRestuarant)
-app.get('/restaurants/recommendation', getRestuarantRecommendation)
+app.post('/restaurants/recommendation', getRestuarantRecommendation)
 app.put('/restaurants/:id', addNote)
 app.delete('/restaurants/:id', deleteNote)
 app.post('/restaurants/user/reccomendation', addUserRecommendation)

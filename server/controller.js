@@ -29,6 +29,12 @@ module.exports = {
 
         const {foodType, priceRange, locationCounty} = req.body
 
+        // console.log(req.body)
+
+        // console.log(foodType)
+        // console.log(priceRange)
+        // console.log(locationCounty)
+
         for (let i = 0; i < restaurants.length; i++){
             let type = restaurants[i].foodType
             let price = restaurants[i].priceRange
@@ -59,10 +65,16 @@ module.exports = {
 
         const {id} = req.params 
         const {note} = req.body
+        // console.log(req.params)
+        // console.log(note)
 
         const index = restaurants.findIndex((restaurants) => restaurants.restaurantID === +id)
 
         restaurants[index].userNote = note
+
+        // console.log(restaurants[index])
+
+        
 
         res.status(200).send(restaurants)
     },

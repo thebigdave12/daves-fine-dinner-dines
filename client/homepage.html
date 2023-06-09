@@ -33,9 +33,9 @@
 
         <section id="recommendationSection">
             <div id="getReccomendation">
-                <form id="drinkForm">
+                <form id="recomendationForm">
                     <div>
-                        <select name="foodType" id="foodTypeInput" class="recomendationForm">
+                        <select name="foodType" id="foodTypeInput" class="recomendationFormDropdown">
                             <optgroup label="Food Type/Genre">
                                 <option value="All Food Types">Select All Food Types</option>
                                 <option value="Italian">Italian</option>
@@ -45,7 +45,7 @@
                         </select>
                     </div>
                     <div>
-                        <select name="priceRange" id="priceRangeInput" class="recomendationForm" placeholder="Price Range">
+                        <select name="priceRange" id="priceRangeInput" class="recomendationFormDropdown" placeholder="Price Range">
                             <optgroup label="Price Range (per person)">
                                 <option value="All Price Ranges">Select All Price Ranges</option>
                                 <option value="$">$ -> ($15 or less)</option>
@@ -55,7 +55,7 @@
                         </select>
                     </div>
                     <div>
-                        <select name="locationCounty" id="locationCountyInput" class="recomendationForm" placeholder="Location">
+                        <select name="locationCounty" id="locationCountyInput" class="recomendationFormDropdown" placeholder="Location">
                             <optgroup label="Location">
                                 <option value="All Locations">Select All Locations</option>
                                 <option value="Salt Lake County">Salt Lake County</option>
@@ -78,6 +78,5 @@
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="./index.js"></script>
-
 </body>
 </html>
