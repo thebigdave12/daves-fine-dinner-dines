@@ -94,6 +94,9 @@ module.exports = {
 
         const {name, location} = req.body
 
+        console.log(name)
+        console.log(location)
+
         let newRecommendation = {
             recommendationId: globalReccomendationID,
             recommendedRestaurantName: name,
@@ -103,6 +106,8 @@ module.exports = {
         userRecommendation.push(newRecommendation)
 
         globalReccomendationID++
+
+        console.log(userRecommendation)
 
         res.status(200).send(newRecommendation)
 

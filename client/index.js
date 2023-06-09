@@ -5,7 +5,8 @@ const baseURL = 'http://localhost:2323/restaurants'
 //Step 1: 
 const recommendationDisplay = document.querySelector("#restuarantRecommendationDisplay")
 const randomRestuarantBtn = document.querySelector("#randomRecommendation")
-const formGetRecommendations = document.querySelector("#recomendationForm")
+const formGetRecommendations = document.querySelector("#recommendationForm")
+const formUserRecommendation = document.querySelector("#userReccomendationForm")
 
 //Step 2: 
 
@@ -243,5 +244,42 @@ const deleteNote = (id) => {
 
 }
 
-formGetRecommendations.addEventListener("submit", getRestaurantRecommendations)
-randomRestuarantBtn.addEventListener("click", displayRandomRestaurant)
+const displayUserRecommendation = (e) => {
+
+}
+
+const addUserRecommendation = (e) => {
+    e.preventDefault()
+
+    drinkDisplay.innerHTML = ''
+
+    let userRecommendationRestaurantName = document.querySelector('#userRecommendationName')
+    let userRecommendationRestaurantLocation = document.querySelector('#userRecommendationLocation')
+
+    console.log(userRecommendationRestaurantName)
+    console.log(userRecommendationRestaurantLocation)
+
+
+    let bodyObj = {
+        name: userRecommendationRestaurantName.value,
+        location: userRecommendationRestaurantLocation.value,
+    }
+    
+    axios.post("http://localhost:2323/restaurants/user/reccomendation", bodyObj)
+        .then((res) => {
+            console.log(res.data)
+            displayAllDrinks(res.data)
+
+            userRecommendationRestaurantLocation.value = ''
+            userRecommendationRestaurantName.value = ''
+            
+
+        })
+        .catch((err) => {
+            console.log(err)
+        })
+}
+
+formGetRecommendations.addEventListener("submit", getRestaurantRecommendations);
+randomRestuarantBtn.addEventListener("click", displayRandomRestaurant);
+formUserRecommendation.addEventListener("submit", addUserRecommendation);
