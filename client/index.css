@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#restuarantRecommendationDisplay {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: azure;
+}
+/* random restaurant display card css */
+
+.random-card{
+    border-radius: 25px;
+    background-color: white;
+}
+.random-image-content,
+.new-random-restaurant-button,
+.random-restaurant-name
+ {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 14px;
+}
+
+.random-image-content{
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+}
+
+.random-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: blueviolet;
+    border-radius: 25px 25px 0 25px;
+}
+.random-overlay::before,
+.random-overlay::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    height: 50px;
+    width: 50px;
+    background-color: blueviolet;
+}
+.random-overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: white;
+}
+
+.random-card-image{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background: beige;
+    padding: 3px;
+}
+
+.random-card-image .random-card-image-2{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid blueviolet;
+}
+
+.random-daves-review-content {
+    max-width: 400px;
+}
+
+.new-random-restaurant-button{
+    font-size: large;
+    color: white;
+    padding: 8px 16px;
+    background-color: blueviolet;
+    border-radius: 6px;
+    margin: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.new-random-restaurant-button:hover{
+    background: rgb(183, 106, 255);
+}
+
+.random-card-content {
+    padding: 10px 30px;
+    line-height: 200%;
+}
+
+.random-daves-review-content {
+    line-height: 125%;
+} 
