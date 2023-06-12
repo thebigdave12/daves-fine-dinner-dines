@@ -209,7 +209,9 @@ displayRandomRestaurant = (e) => {
                                     <h3 class="random-daves-review-title"> Dave's Review:</h3>
                                         <p class="random-daves-review-content">${restaurant.davesReview}</p>
                                     <br> 
-                                    <button class="new-random-restaurant-button" id='random-display-new-random-restaurant-${restaurant.restaurantID}'>Let's Try Something Else...</button>
+                                    <div class="random-restaurant-button">
+                                        <button class="new-random-restaurant-button" id='random-display-new-random-restaurant-${restaurant.restaurantID}'>Let's Try Something Else...</button>
+                                    </div>
                                 </div>
                         </div>
                     </div>

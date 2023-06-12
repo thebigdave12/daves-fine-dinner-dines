@@ -18,7 +18,7 @@
     background-color: white;
 }
 .random-image-content,
-.new-random-restaurant-button,
+.random-restaurant-button,
 .random-restaurant-name
  {
     display: flex;
@@ -101,3 +101,5 @@
 .random-daves-review-content {
     line-height: 125%;
 } 
+
+/* form restaurant display card css */
