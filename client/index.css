@@ -4,13 +4,123 @@
     box-sizing: border-box;
 }
 
+
+/* Navigation Bar  */
+
+.topnav {
+    background-color: #3B3E43;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: #3B3E43;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #F6E073;
+    color: #3B3E43;
+  }
+
+/* homepage intro section */
+
+#title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 25px;
+}
+
+#intro-text {
+    max-width: 800px;
+    padding: 5px;
+    line-height: 125%;
+}
+
+/* homepage form box */
+
+#recommendationSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: aliceblue;
+}
+
+#getRecommendation {
+    width: 350px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #F6E073;
+    border-radius: 10px;
+    line-height: 200%;
+    box-shadow: 10px black;
+}
+
+#foodTypeInput,
+#priceRangeInput,
+#locationCountyInput{
+    border-radius: 5px;
+    font-size: medium;
+}
+
+#foodTypeInput:hover,
+#priceRangeInput:hover,
+#locationCountyInput:hover
+ {
+    background: #3B3E43;
+    color: white;
+    border-color: white;
+}
+
+#randomRecommendation,
+#getReccomendationBtn{
+    border: none;
+    font-size: small;
+    color: white;
+    padding: 8px 16px;
+    background-color: #8f1c47;
+    border-radius: 8px;
+    border: solid black 1px;
+    margin: 3px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#randomRecommendation:hover,
+#getReccomendationBtn:hover{
+    background: #510a24;
+}
+
+/* restaurant display css */
+
 #restuarantRecommendationDisplay {
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: azure;
+    background-color: aliceblue;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
 }
+
 /* random restaurant display card css */
 
 .random-card{
@@ -39,7 +149,7 @@
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: blueviolet;
+    background-color: #8f1c47;
     border-radius: 25px 25px 0 25px;
 }
 .random-overlay::before,
@@ -50,7 +160,7 @@
     bottom: -50px;
     height: 50px;
     width: 50px;
-    background-color: blueviolet;
+    background-color: #8f1c47;
 }
 .random-overlay::after{
     border-radius: 0 25px 0 0;
@@ -62,7 +172,7 @@
     height: 200px;
     width: 200px;
     border-radius: 50%;
-    background: beige;
+    background: #F6E073;
     padding: 3px;
 }
 
@@ -71,7 +181,7 @@
     width: 100%;
     object-fit: cover;
     border-radius: 50%;
-    border: 4px solid blueviolet;
+    border: 4px solid #8f1c47;
 }
 
 .random-daves-review-content {
@@ -80,9 +190,9 @@
 
 .new-random-restaurant-button{
     font-size: large;
-    color: white;
+    color: black;
     padding: 8px 16px;
-    background-color: blueviolet;
+    background-color: #F6E073;
     border-radius: 6px;
     margin: 8px;
     cursor: pointer;
@@ -90,7 +200,9 @@
 }
 
 .new-random-restaurant-button:hover{
-    background: rgb(183, 106, 255);
+    background: #fbd620;
+    border-color: #8f1c47;
+    color: #8f1c47;
 }
 
 .random-card-content {
@@ -103,3 +215,94 @@
 } 
 
 /* form restaurant display card css */
+
+.display-card{
+    border-radius: 25px;
+    background-color: white;
+}
+.display-image-content,
+.display-restaurant-name,
+.note-btn
+ {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 14px;
+}
+
+.display-image-content{
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+}
+
+.display-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #8f1c47;
+    border-radius: 25px 25px 0 25px;
+}
+.display-overlay::before,
+.display-overlay::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    height: 50px;
+    width: 50px;
+    background-color: #8f1c47;
+}
+.display-overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: white;
+}
+
+.display-card-image{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background: beige;
+    padding: 3px;
+}
+
+.display-card-image .display-card-image-2{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #8f1c47;
+}
+
+.display-daves-review-content {
+    max-width: 400px;
+}
+
+.user-note-create,
+.user-note-delete{
+    border: none;
+    font-size: large;
+    color: white;
+    padding: 8px 16px;
+    background-color: #8f1c47;
+    border-radius: 6px;
+    margin: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.user-note-create:hover,
+.user-note-delete:hover{
+    background: rgb(183, 106, 255);
+}
+
+.display-card-content {
+    padding: 10px 30px;
+    line-height: 200%;
+}
+
+.display-daves-review-content{
+    line-height: 125%;
+}

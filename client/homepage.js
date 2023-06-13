@@ -15,114 +15,82 @@ createDisplayRecommendationCard = (restaurant) => {
     console.log(restaurant.restaurantName)
 
     if (restaurant.userNote === "") {
-    //     newRestaurantRecommendationCard.innerHTML = `
-    //     <div class="slide-container swiper">
-    //     <div class="slide-content">
-    //         <div class="card-wrapper swiper-wrapper">
-    //             <div class="card swiper-slide">
-    //                 <div class="image-content">
-    //                     <span class="overlay"></span>
-
-    //                     <div class="card-image">
-    //                         <img src="./images/OteoFoodPic1 copy.jpeg" alt="oteo food" class="card-img">
-    //                     </div>
-    //                 </div>
-
-    //                     <div class="card-content">
-    //                         <h2 class='restaurantName'>Oteo's Bistro</h2>
-    //                         <br>
-    //                         <h3 class="foodType">Food Type  ->  Mexican</h3>
-    //                         <h3 class="priceRange">Price Range  ->  $$</h3>
-    //                         <h3 class="location">Location  ->  Utah County</h3>
-    //                         <br>
-    //                         <h3 class="davesReviewTitle"> Dave's Review:</h3>
-    //                             <p class="davesReviewContent">5 out of 5 stars. Oteo is some of the Best Mexican food I’ve ever had in Utah. The menu is locally sourced and extremely fresh. With such a small menu, you really can’t go wrong.</p>
-    //                         <br>    
-    //                         <h3 class='recommendationUserNoteTitle'>User Note: </h3> 
-    //                             <textarea rows="3" cols="46" id="newNote-${restaurant.restaurantID}" placeholder="Type Note Here..."></textarea>
-    //                             <br></br>
-    //                             <div class="noteBtn">
-    //                             <button id="userNoteCreate" class="userNoteBtns">Post Your Note</button>
-    //                             </div>
-    //                     </div>
-                    
-    //             </div>
-                
-                    
-    //             </div>
-    //         </div>
-    //     </div>
-
-    //     <div class="swiper-button-next"></div>
-    //     <div class="swiper-button-prev"></div>
-    //     <div class="swiper-pagination"></div>
-    // </div>
-
-
-    //     `
-
 
         newRestaurantRecommendationCard.innerHTML = `
-            <div>
-                <h3 class='restaurantName'>${restaurant.restaurantName}</h3>
+        <div class="display-card-container">
+            <div class="display-slide-content">
+                <div class="display-card-wrapper">
+                    <div class="display-card">
+                        <div class="display-image-content">
+                            <span class="display-overlay"></span>
+
+                            <div class="display-card-image">
+                                <img src="${restaurant.foodPictureURL}" alt="This is a beautiful picture of food" class="display-card-image-2">
+                            </div>
+                        </div>
+                            <div class="display-card-content">   
+                                <h2 class='display-restaurant-name'>${restaurant.restaurantName}</h2>
+                                <br>
+                                <h3 class="display-food-type">Food Type  ->  ${restaurant.foodType}</h3>
+                                <h3 class="display-price-range">Price Range  ->  ${restaurant.priceRange}</h3>
+                                <h3 class="display-location">Location  ->  ${restaurant.locationCounty}</h3>
+                                <h3 class="display-menu-link">Menu  -> <a href="${restaurant.menuLink}" class="diplay-menu-Link">${restaurant.restaurantName} Menu</a> <h3/>
+                                <br>
+                                <h3 class="display-daves-review-title"> Dave's Review:</h3>
+                                    <p class="display-daves-review-content">${restaurant.davesReview}</p>
+                                <br> 
+                                <h3 class='display-recommendation-user-note-title'>User Note: </h3> 
+                                    <p class='display-recommendation-user-note-text'>${restaurant.userNote}</p>
+                                <textarea rows="3" cols="46" id="new-note-${restaurant.restaurantID}" placeholder="Type Note Here..."></textarea>
+                                <br></br>
+                                <div class="note-btn">
+                                    <button id="user-note-create-${restaurant.restaurantID}" class="user-note-create">Post Your Note</button>
+                                </div>         
+                            </div>
+                    </div>
+                </div>
             </div>
-            <div>
-                <img src=${restaurant.foodPictureURL} alt='Picture of food item at ${restaurant.restaurantName}' class='foodPic'/>
-            </div>
-            <div>
-                <h5 class='recommendationFoodType'>Food Type -> ${restaurant.foodType}</h5>
-            </div>
-            <div>
-                <h5 class='recommendationPriceRange'>Price Range -> ${restaurant.priceRange}</h5>
-            </div>
-            <div>
-                <h5 class='recommendationLocation'>Location -> ${restaurant.locationCounty}</h5>
-            </div>
-            <div>
-                <h5 class='recommendationMenuLink'>Menu Link: </h5> <a href="${restaurant.menuLink}" class="menuLink">${restaurant.restaurantName} Menu</a>
-            </div>
-            <div class='reccomendationReview'>
-                <h5 class='recommendationReviewTitle'>Dave's Review: </h5>
-                <p class='recommendationReviewText'>${restaurant.davesReview}</p>
-            </div>
-            <div>
-                <h5 class='recommendationUserNoteTitle'>User Note: </h5> 
-                <p class='recommendationUserNoteText'>${restaurant.userNote}</p>
-                <textarea rows="3" cols="55" id="newNote-${restaurant.restaurantID}" placeholder="Type Note Here..."></textarea>
-                <br></br>
-                <button id="userNoteCreate-${restaurant.restaurantID}" class="userNoteBtns">Post Your Note</button>
-            </div>
+
+        </div>
+
+        <br>
+ 
         `
     } else {
         newRestaurantRecommendationCard.innerHTML = `
-            <div>
-                <h3 class='restaurantName'>${restaurant.restaurantName}</h3>
+        <div class="display-card-container>
+        <div class="display-card-content">
+            <div class="display-card-wrapper">
+                <div class="display-card">
+                    <div class="display-image-content">
+                        <span class="display-overlay"></span>
+
+                        <div class="display-card-image">
+                            <img src="${restaurant.foodPictureURL}" alt="This is a beautiful picture of food" class="display-card-image-2">
+                        </div>
+                    </div>
+                        <div class="display-card-content">   
+                            <h2 class='display-restaurant-name'>${restaurant.restaurantName}</h2>
+                            <br>
+                            <h3 class="display-food-type">Food Type  ->  ${restaurant.foodType}</h3>
+                            <h3 class="display-price-range">Price Range  ->  ${restaurant.priceRange}</h3>
+                            <h3 class="display-location">Location  ->  ${restaurant.locationCounty}</h3>
+                            <h3 class="display-menu-link">Menu  -> <a href="${restaurant.menuLink}" class="diplay-menu-Link">${restaurant.restaurantName} Menu</a> <h3/>
+                            <br>
+                            <h3 class="display-daves-review-title"> Dave's Review:</h3>
+                                <p class="display-daves-review-content">${restaurant.davesReview}</p>
+                            <br> 
+                            <h3 class='display-recommendation-user-note-title'>User Note: </h3> 
+                                <p class='display-recommendation-user-note-text'>${restaurant.userNote}</p>
+                                <br></br>
+                                <div class="note-btn">
+                                <button id="userNoteDelete-${restaurant.restaurantID}" class="user-note-delete" onclick='deleteNote(${restaurant.restaurantID})'>Delete Note</button>
+                                </div>         
+                        </div>
+                </div>
             </div>
-            <div>
-                <img src=${restaurant.foodPictureURL} alt='Picture of food item at ${restaurant.restaurantName}' class='foodPic'/>
-            </div>
-            <div>
-                <h5 class='recommendationFoodType'>Food Type -> ${restaurant.foodType}</h5>
-            </div>
-            <div>
-                <h5 class='recommendationPriceRange'>Price Range -> ${restaurant.priceRange}</h5>
-            </div>
-            <div>
-                <h5 class='recommendationLocation'>Location -> ${restaurant.locationCounty}</h5>
-            </div>
-            <div>
-                <h5 class='recommendationMenuLink'>Menu Link: </h5> <a href="${restaurant.menuLink}" class="menuLink">${restaurant.restaurantName} Menu</a>
-            </div>
-            <div class='reccomendationReview'>
-                <h5 class='recommendationReviewTitle'>Dave's Review: </h5>
-                <p class='recommendationReviewText'>${restaurant.davesReview}</p>
-            </div>
-            <div>
-                <h5 class='recommendationUserNoteTitle'>User Note: </h5>
-                <p class='recommendationUserNoteText'>${restaurant.userNote}</p> 
-            <div>
-            <button id="userNoteDelete-${restaurant.restaurantID}" class="userNoteBtns" onclick='deleteNote(${restaurant.restaurantID})'>Delete Note</button>
-            </div>
+        </div>
+    </div>
     `
     }
     
@@ -130,8 +98,8 @@ createDisplayRecommendationCard = (restaurant) => {
     recommendationDisplay.appendChild(newRestaurantRecommendationCard)
 
     if (restaurant.userNote === "") {
-        document.querySelector(`#userNoteCreate-${restaurant.restaurantID}`).addEventListener('click', () => {
-            addNote(restaurant.restaurantID, document.getElementById(`newNote-${restaurant.restaurantID}`).value)
+        document.querySelector(`#user-note-create-${restaurant.restaurantID}`).addEventListener('click', () => {
+            addNote(restaurant.restaurantID, document.getElementById(`new-note-${restaurant.restaurantID}`).value)
         })
     }    
 }
@@ -198,7 +166,7 @@ displayRandomRestaurant = (e) => {
                                     <img src="${restaurant.foodPictureURL}" alt="This is a beautiful picture of food" class="random-card-image-2">
                                 </div>
                             </div>
-                                <div class="random-card-content">   
+                                <div class="random-card-content"> 
                                     <h2 class='random-restaurant-name'>${restaurant.restaurantName}</h2>
                                     <br>
                                     <h3 class="random-food-type">Food Type  ->  ${restaurant.foodType}</h3>
@@ -210,7 +178,7 @@ displayRandomRestaurant = (e) => {
                                         <p class="random-daves-review-content">${restaurant.davesReview}</p>
                                     <br> 
                                     <div class="random-restaurant-button">
-                                        <button class="new-random-restaurant-button" id='random-display-new-random-restaurant-${restaurant.restaurantID}'>Let's Try Something Else...</button>
+                                        <button class="new-random-restaurant-button" id='random-display-new-random-restaurant-${restaurant.restaurantID}'>Let's Try Something Else</button>
                                     </div>
                                 </div>
                         </div>
@@ -296,6 +264,8 @@ const deleteNote = (id) => {
         })
 
 }
+
+
 
 formGetRecommendations.addEventListener("submit", getRestaurantRecommendations);
 randomRestuarantBtn.addEventListener("click", displayRandomRestaurant);

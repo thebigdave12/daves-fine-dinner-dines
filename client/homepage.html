@@ -11,30 +11,31 @@
 </head>
 <body>
     <header>
-        <h1>Dave's Fine Dinner Dines</h1>
+        <div class="topnav">
+            <a class="active" href="#home">Home</a>
+            <a href="/aboutDave.html">About Dave</a>
+            <a href="./userRecommendation.html">Give a Recommendation</a>
+            <a href=''>Coming Soon...</a>
+        </div>
     </header>
 
     <main>
-        <section id="introSection">
-            <div id="introText">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur itaque tenetur, reprehenderit id, consectetur mollitia repellat vel optio doloribus soluta fuga amet error eos? Quasi soluta nostrum expedita in enim?</p>
-            </div>
-            <div>
-                 <a href="./aboutDave.html" class="navBar">About Dave</a>
-            </div>
-            <div>
-                <button id="randomRecommendation" class="introBtns">Get a Random Recommendation</button>
-            </div>
-            <div>
-                <a href="./userRecommendation.html" class="navBar">Give Dave a Recommendation</a>
-            </div>
+        <section id="introSection"></section>
+        <div id="title">
+            <h1>Dave's Fine Dinner Dines</h1>
+            <p id="intro-text">As you can see, I love FOOD!!! Although you may not believe it, Utah has a number of tasty bites that are sure to blow you away. To help in your quest to find the most delicious, unique meals in the state I've created a Dave's Fine Dinner Dines. Just use the filters below to let me know what kind of food your feeling, and I'll do the rest. Trust me no more dreaded indecision! </p>
+        </div>
+
         </section>
             
 
         <section id="recommendationSection">
-            <div id="getReccomendation">
+            <div id="getRecommendation">
+                <div>
+                    <h1 id="form-title"> Get a Recommendation! </h1>
+                </div>
                 <form id="recommendationForm">
-                    <div>
+                    <div class="selectors">
                         <select name="foodType" id="foodTypeInput" class="recomendationFormDropdown">
                             <optgroup label="Food Type/Genre">
                                 <option value="All Food Types">Select All Food Types</option>
@@ -44,7 +45,7 @@
                         </optgroup>
                         </select>
                     </div>
-                    <div>
+                    <div class="selectors">
                         <select name="priceRange" id="priceRangeInput" class="recomendationFormDropdown" placeholder="Price Range">
                             <optgroup label="Price Range (per person)">
                                 <option value="All Price Ranges">Select All Price Ranges</option>
@@ -54,7 +55,7 @@
                             </optgroup>
                         </select>
                     </div>
-                    <div>
+                    <div class="selectors">
                         <select name="locationCounty" id="locationCountyInput" class="recomendationFormDropdown" placeholder="Location">
                             <optgroup label="Location">
                                 <option value="All Locations">Select All Locations</option>
@@ -65,9 +66,13 @@
                     </div>
                     
                     <div>
-                        <button id="getReccomendationBtn">Show Recommendation!</button>
+                        <button id="getReccomendationBtn">Show Dave's Recommendations</button>
+                    </div>
+                    <div>
+                        <button id="randomRecommendation" class="form-box-buttons">Get a Random Recommendation</button>
                     </div>
                 </form>
+        
             </div>
         </section>
         
@@ -78,5 +83,6 @@
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="./homepage.js"></script>
+
 </body>
 </html>
