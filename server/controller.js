@@ -20,7 +20,6 @@ module.exports = {
 
     getRandomRestuarant: (req, res) => {
         let randomIndex = Math.floor(Math.random() * restaurants.length);
-        
         res.status(200).send(restaurants[randomIndex])
     },
 
@@ -28,12 +27,6 @@ module.exports = {
         let recommendationArr = []
 
         const {foodType, priceRange, locationCounty} = req.body
-
-        // console.log(req.body)
-
-        // console.log(foodType)
-        // console.log(priceRange)
-        // console.log(locationCounty)
 
         for (let i = 0; i < restaurants.length; i++){
             let type = restaurants[i].foodType
@@ -65,16 +58,10 @@ module.exports = {
 
         const {id} = req.params 
         const {note} = req.body
-        // console.log(req.params)
-        // console.log(note)
 
         const index = restaurants.findIndex((restaurants) => restaurants.restaurantID === +id)
 
         restaurants[index].userNote = note
-
-        // console.log(restaurants[index])
-
-        
 
         res.status(200).send(restaurants)
     },
@@ -94,9 +81,6 @@ module.exports = {
 
         const {name, location} = req.body
 
-        console.log(name)
-        console.log(location)
-
         let newRecommendation = {
             recommendationId: globalReccomendationID,
             recommendedRestaurantName: name,
@@ -114,10 +98,7 @@ module.exports = {
     },
 
     getUserRecommendations: (req, res) => {
-        console.log(userRecommendation)
-        
         res.status(200).send(userRecommendation)
-        
     },
 
 

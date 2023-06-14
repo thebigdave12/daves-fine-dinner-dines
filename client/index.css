@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+*{
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+}
 
 /* Navigation Bar  */
 
@@ -304,7 +308,9 @@
 }
 .user-note-create:hover,
 .user-note-delete:hover{
-    background: rgb(183, 106, 255);
+    background: #fbd620;
+    border-color: #8f1c47;
+    color: #8f1c47;
 }
 
 .display-card-content {
@@ -327,13 +333,30 @@
     line-height: 125%;
 }
 
+#user-rec {
+    background-color: aliceblue;
+}
+#user-recommendation-intro {
+    background-color: white;
+}
+
+
 
 #newRecommendationSection {    
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
     padding: 20px;
     background-color: aliceblue;
+}
+
+#top-bun-img-user-recommendation,
+#bottom-bun-img-user-recommendation {
+    height: auto;
+    width: 250px;
+    padding: 15px
 }
 
 #newRecommendationDiv {
@@ -358,3 +381,110 @@
     flex-direction: column;
     flex-wrap: wrap;
 }
+
+#addRecommendation,
+#seeAllRecommendations{
+    border: none;
+    font-size: small;
+    color: white;
+    padding: 8px 16px;
+    background-color: #8f1c47;
+    border-radius: 8px;
+    border: solid black 1px;
+    margin: 3px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#addRecommendation:hover,
+#seeAllRecommendations:hover{
+    background: #510a24;
+}
+
+/* about dave page */
+
+#about-dave-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 25px;
+}
+
+#about-dave-intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+}
+
+#about-dave-paragraph {
+    max-width: 1000px;
+    margin-bottom: 10px;
+    line-height: 125%;
+}
+
+#socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#fb{
+    height: 140px;
+    width: auto;
+    padding: 25px;
+}
+#insta,
+#axios,
+#js,
+#css,
+#html,
+#cors,
+#express {
+    height: 150px;
+    width: auto;
+    padding: 25px;
+    margin-right: 25px;
+}
+
+#fb:hover,
+#insta:hover,
+#axios:hover,
+#js:hover,
+#css:hover,
+#html:hover,
+#cors:hover,
+#express:hover {
+ background-color: #F6E073;
+}
+
+#food-images-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: aliceblue;
+}
+
+#about-dave-img,
+#about-dave-img-ice {
+    height: 350px;
+    width: auto;
+    padding: 25px;
+}
+
+#about-dave-img-ice {
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+#about-dave{
+    background-color: aliceblue;
+}
+
+

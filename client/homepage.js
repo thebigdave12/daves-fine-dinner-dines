@@ -1,13 +1,10 @@
-console.log('JS connected successfully!')
+// console.log('JS connected successfully!')
 
 const baseURL = 'http://localhost:2323/restaurants'
-
-//Step 1: 
+ 
 const recommendationDisplay = document.querySelector("#restuarantRecommendationDisplay")
 const randomRestuarantBtn = document.querySelector("#randomRecommendation")
 const formGetRecommendations = document.querySelector("#recommendationForm")
-
-//Step 2: 
 
 createDisplayRecommendationCard = (restaurant) => {
     const newRestaurantRecommendationCard = document.createElement('section')
@@ -222,7 +219,7 @@ addNote = (id, note) => {
 
             axios.post(`${baseURL}/recommendation`, bodyObj)
                 .then((res) => {
-                console.log(res.data)
+                // console.log(res.data)
                 displayRestaurantRecommendations(res.data)
                 })
                 .catch((err) => {
@@ -252,7 +249,7 @@ const deleteNote = (id) => {
 
             axios.post(`${baseURL}/recommendation`, bodyObj)
                 .then((res) => {
-                console.log(res.data)
+                // console.log(res.data)
                 displayRestaurantRecommendations(res.data)
                 })
                 .catch((err) => {
