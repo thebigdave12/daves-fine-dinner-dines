@@ -52,10 +52,19 @@
 
 /* homepage form box */
 
+#top-bun-img,
+#bottom-bun-img {
+    height: auto;
+    width: 375px;
+    padding: 15px
+}
+
 #recommendationSection {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
     padding: 20px;
     background-color: aliceblue;
 }
