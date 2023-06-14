@@ -306,3 +306,46 @@
 .display-daves-review-content{
     line-height: 125%;
 }
+
+/* user recommendation page */
+
+#user-recommendation-intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 25px;
+    line-height: 125%;
+}
+
+
+#newRecommendationSection {    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: aliceblue;
+}
+
+#newRecommendationDiv {
+    width: 250px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #F6E073;
+    border-radius: 10px;
+    line-height: 200%;
+    box-shadow: 10px black;
+}
+
+#restuarantUserRecommendationDisplay {
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+    flex-direction: column;
+    flex-wrap: wrap;
+}

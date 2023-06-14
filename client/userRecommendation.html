@@ -4,45 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="aboutDavePage" href="./aboutDave.html">
+    <link rel="homepage" href="./homepage.html">
     <title>Make a Recommendation</title>
 </head>
 <body>
 
     <header>
-       <h1> Make a Recommendation! </h1> 
+        <div class="topnav">
+            <a href="./homepage.html">Home</a>
+            <a href="./aboutDave.html">About Dave</a>
+            <a class="active" href="./userRecommendation.html">Give a Recommendation</a>
+            <a href=''>Coming Soon...</a>
+        </div>
     </header>
 
-    <section id="userRecommendationIntro">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident culpa pariatur rem fugit eius libero doloribus iure eaque sapiente non quaerat quam ab, magnam maiores doloremque voluptates nulla ratione explicabo!</p>
-    </section>
-    <section id="newRecommendation">
-        <form id="userRecommendationForm">
-            <div>
-                <input type="text" id="userRecommendationName" placeholder="Restaurant Name">
-            </div>
-            <div>
-                <input type="text" id="userRecommendationLocation" placeholder="Restaurant Location">
-            </div>
-            <div>
-                <button id="addRecommendation">Add Recommendation</button>
-            </div>
-        </form>
+
+    <section id="user-recommendation-intro">
+       <h1> Make a Recommendation! </h1> 
+       <br>
+            <p>Utah has a suprising amount of hidden food gems and of course I haven't been able to hit them all. Fellow foodies... Please let me know where I need to go to get the best local grub!</p>
     </section>
 
-    <section id="userRecommendationOther">
-        <div>
-            <button id="seeAllRecommendations">See All User Recommendations</button>
+    <section id="newRecommendationSection">
+        <div id="newRecommendationDiv">
+            <form id="userRecommendationForm">
+                <div>
+                    <h3>Where Should I Eat?</h3>
+                </div>
+                <div>
+                    <input type="text" id="userRecommendationName" placeholder="Restaurant Name">
+                </div>
+                <div>
+                    <input type="text" id="userRecommendationLocation" placeholder="Restaurant Location">
+                </div>
+                <div>
+                    <button id="addRecommendation">Add Recommendation</button>
+                </div>
+                <div>
+                    <button id="seeAllRecommendations">See All User Recommendations</button>
+                </div>
+            </form>
         </div>
-        <div>
-            <a href="./homepage.html" class="navBar">Get a Recommendation from Dave</a>
-        </div>
-        <div>
-            <a href="./aboutDave.html" class="navBar">About Dave</a>
-        </div>
-        
     </section>
 
-    <section id="restuarantRecommendationDisplay"></section>
+
+    <section id="restuarantUserRecommendationDisplay"></section>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="./userRec.js"></script>
